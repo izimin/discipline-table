@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DisciplineList from './components/DisciplineList'
+import data from './data/disciplines';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [modules, setModules] = React.useState(
+        data.modules
+    );
+
+    const toggleDiscipline = (module, index) => {
+        const curStatus = modules[module - 1].disciplines[index].finished;
+        modules[module - 1].disciplines[index].finished = !curStatus;
+        setModules(modules.map(m => m));
+        const gif = document.getElementById('gif-finished');
+
+        if (!curStatus) {
+            gif.innerHTML = '<img src="https://i.gifer.com/6mx.gif" alt="this slowpoke moves" width="250"/>';
+            setTimeout(() => gif.innerHTML = '', 3000);
+        }
+    };
+
+    return (
+        <div className='flex-row'>
+            <div id='gif-finished' className='gif'/>
+            <div className='wrapper'>
+                <div className='title'>Discipline table</div>
+                <DisciplineList modules={modules} onToggle={toggleDiscipline}/>
+            </div>
+        </div>
+    );
 }
 
 export default App;

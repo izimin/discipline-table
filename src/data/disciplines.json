@@ -1,0 +1,91 @@
+{
+  "modules": [
+    {
+      "number": 1,
+      "disciplines": [
+        {
+          "subjectName": "Web Programming",
+          "link": "#",
+          "hours": 228,
+          "finished": false
+        },
+        {
+          "subjectName": "IT Business and IT Innovations",
+          "link": "#",
+          "hours": 228,
+          "finished": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "disciplines": [
+        {
+          "subjectName": "WEnterprise Architecture",
+          "link": "#",
+          "hours": 190,
+          "finished": false
+        },
+        {
+          "subjectName": "Corporate Information Systems",
+          "link": "#",
+          "hours": 114,
+          "finished": false
+        },
+        {
+          "subjectName": "Internet entrepreneurship",
+          "link": "#",
+          "hours": 228,
+          "finished": false
+        },
+        {
+          "subjectName": "Physical Training",
+          "link": "#",
+          "hours": 50,
+          "finished": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "disciplines": [
+        {
+          "subjectName": "Data analysis technologies in Internet",
+          "link": "#",
+          "hours": 228,
+          "finished": false
+        },
+        {
+          "subjectName": "Intelligent Systems",
+          "link": "#",
+          "hours": 228,
+          "finished": false
+        },
+        {
+          "subjectName": "IT Project Management",
+          "link": "#",
+          "hours": 190,
+          "finished": false
+        },
+        {
+          "subjectName": "Physical Training",
+          "link": "#",
+          "hours": 50,
+          "finished": false
+        },
+        {
+          "subjectName": "Project Proposal",
+          "link": "#",
+          "hours": null,
+          "finished": false
+        },
+        {
+          "subjectName": "Research Seminar",
+          "link": "#",
+          "hours": 114,
+          "finished": false
+        }
+      ]
+    }
+  ]
+}
