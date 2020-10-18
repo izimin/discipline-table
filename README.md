@@ -1,4 +1,4 @@
 # discipline-table
 ## Run
-### npm i
-### npm start
+- npm i
+- npm start
